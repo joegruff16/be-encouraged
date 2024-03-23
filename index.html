@@ -11,21 +11,25 @@
 
 <body>
     <!-- Heading that is to be positioned on the left -->
-    <h1>My Blog: Be Encouraged</h1>
+    <div>
+        <h1>My Blog: Be Encouraged</h1>
+    </div>
 
     <!-- Heading above form to be positioned on the right -->
-    <h2>What's on your mind?</h2>
-
-    <!-- Start of form that includes username, title, content -->
     <div>
-        <form action="./blog.html"></form>
-        <label for="uname">Username</label><br>
-        <input type="text" id="uname" name="uname" value=""><br>
-        <label for="title">Title</label><br>
-        <input type="text" id="title" name="title" value=""><br>
-        <label for="content">Content</label><br>
-        <input type="text" id="content" name="content" value=""><br>
-        <input type="submit" value="Submit">
+        <h2>What are you looking for?</h2>
+
+        <!-- Start of form that includes username, title, content -->
+        <form action="./blog.html">
+            <label for="uname">Username</label><br>
+            <input type="text" id="uname" name="uname" required><br><br>
+            <label for="title">Title</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="content">Content</label><br>
+            <input type="text" id="content" name="content" required><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
     </div>
 
 </body>
