@@ -12,16 +12,14 @@
 
 <body>
     <!-- Heading that is to be positioned on the left -->
-    <div class="header">
-        <h1>My Blog: Be Encouraged</h1>
-    </div>
-
-    <!-- Heading above form to be positioned on the right -->
-    <div>
-        <h2>What are you looking for?</h2>
+    <div class="flex-container">
+        <h1 class="heading1">My Blog: Be Encouraged</h1>
 
         <!-- Start of form that includes username, title, content -->
         <form action="./blog.html">
+
+            <!-- Heading above form to be positioned on the right -->
+            <h2>What are you looking for?</h2>
             <label for="uname">Username</label><br>
             <input type="text" id="uname" name="uname" required><br><br>
             <label for="title">Title</label><br>
@@ -30,7 +28,6 @@
             <input type="text" id="content" name="content" required><br><br>
             <input type="submit" value="Submit">
         </form>
-
     </div>
 
 </body>

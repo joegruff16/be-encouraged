@@ -1,8 +1,14 @@
-.header {
+.flex-container {
     margin-top: 250px;
-    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-style: dashed;
+    border: 5px black
 }
 
-.form {
-    flex-direction: ;
+h1.heading1 {
+    text-align: center;
+    border-style: dotted;
+    border-width: 5px;
 }
