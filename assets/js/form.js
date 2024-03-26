@@ -4,35 +4,42 @@
 const userNameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
-const messageDiv = document.querySelector('#message');
 const submitButton = document.querySelector('#submit');
 
+
 // Message Display after submit button is selected
-function displayMessage(type, message) {
-    messageDiv.textContent = message;
-    messageDiv.setAttribute('class', type);
-}
+
 
 // Input > Dowork > Output - The input is the event
 submitButton.addEventListener('click', function (event) {
     // console.log(event);
     event.preventDefault();
+    console.log(`is this working?`);
 
-    const userNameInput = userNameInput.value;
-    const titleInput = titleInput.value;
-    const contentInput = contentInput.value;
 
-    if (username === '') {
-        displayMessage('error', 'Username cannot be blank');
-    } else if (title === '') {
-        displayMessage('error', 'Title cannot be blank');
-    } else if (content === '') {
-        displayMessage('error', 'Content cannot be blank');
+    if (userNameInput.value === "" || titleInput.value === "" || contentInput.value === "") {
+        alert('error', 'Username cannot be blank');
     } else {
-        displayMessage('success', 'Logged in successfully');
-
-        localStorage.setItem('email', email);
-        localStorage.setItem('password', password);
-        renderLastRegistered();
+        console.log(`all data entered`);
+        savePost();
     }
 })
+
+function savePost() {
+    const blogData = {
+        username: userNameInput.value.trim(),
+        title: titleInput.value.trim(),
+        content: contentInput.value.trim()
+    };
+    var blogPost = JSON.parse(localStorage.getItem('blogPost'));
+    if (blogPost === null) {
+        blogPost = [];
+    } else {
+        blogPost.push(blogData);
+    }
+}
+
+localStorage.setItem('blogPost', JSON.stringify(blogPost))
+console.log('post saved into local storage');
+
+window.location.href = 'blog.html';
