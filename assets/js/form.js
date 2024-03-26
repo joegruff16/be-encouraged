@@ -7,9 +7,6 @@ const contentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 
 
-// Message Display after submit button is selected
-
-
 // Input > Dowork > Output - The input is the event
 submitButton.addEventListener('click', function (event) {
     // console.log(event);
@@ -17,8 +14,7 @@ submitButton.addEventListener('click', function (event) {
     console.log(`is this working?`);
 
 
-    if (userNameInput.value === "" || titleInput.value === "" || contentInput.value === "") {
-        alert('error', 'Username cannot be blank');
+    if (userNameInput.value === '' || titleInput.value === '' || contentInput.value === '') {
     } else {
         console.log(`all data entered`);
         savePost();
