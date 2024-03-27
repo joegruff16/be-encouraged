@@ -15,7 +15,9 @@ submitButton.addEventListener('click', function (event) {
 
 
     if (userNameInput.value === '' || titleInput.value === '' || contentInput.value === '') {
+        alert("Must enter a value");
     } else {
+
         console.log(`all data entered`);
         savePost();
     }
