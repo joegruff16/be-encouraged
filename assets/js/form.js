@@ -21,21 +21,19 @@ submitButton.addEventListener('click', function (event) {
     }
 })
 
+// This function saves data entered into username, title, and password into the local storage
 function savePost() {
     const blogData = {
         username: userNameInput.value.trim(),
         title: titleInput.value.trim(),
         content: contentInput.value.trim()
     };
-    var blogPost = JSON.parse(localStorage.getItem('blogPost'));
-    if (blogPost === null) {
-        blogPost = [];
-    } else {
-        blogPost.push(blogData);
-    }
+    var blogPost = JSON.parse(localStorage.getItem('blogPost')) || [];
+
+    blogPost.push(blogData);
+
+    localStorage.setItem('blogPost', JSON.stringify(blogPost));
+    console.log('post saved into local storage');
+
+    window.open("blog.html");
 }
-
-localStorage.setItem('blogPost', JSON.stringify(blogPost))
-console.log('post saved into local storage');
-
-window.location.href = 'blog.html';
