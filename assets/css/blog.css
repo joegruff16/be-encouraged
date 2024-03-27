@@ -3,13 +3,6 @@
     padding: 10px;
 }
 
-.montserrat-font {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-}
-
 button {
     background-color: navy;
     color: aliceblue;
