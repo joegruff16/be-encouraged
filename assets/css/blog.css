@@ -1,18 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+button {
+    background-color: navy;
+    color: aliceblue;
+    font-size: medium;
+}
+
 body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: center;
+    align-items: left;
     height: 100vh;
     margin: 0;
 }
 
 .table {
     border-collapse: collapse;
+    text-align: left;
+    color: black;
+    padding: 50px;
+
 }
 
 td,
-tr {
+th tr {
     border: 1px solid black;
     padding: 10px;
 }
