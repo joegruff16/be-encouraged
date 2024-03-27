@@ -1,3 +1,10 @@
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
 .flex-container {
     margin-top: 250px;
     display: flex;
