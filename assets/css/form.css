@@ -1,13 +1,19 @@
 .flex-container {
     margin-top: 250px;
     display: flex;
+    background-color: grey;
+    color: rgb(0, 1, 2);
     flex-direction: row;
     justify-content: center;
     border-style: dashed;
-    border: 5px black
+    border: 25px rgb(225, 11, 11)
 }
 
-h1.heading1 {
+.box {
+    margin-right: 25px;
+}
+
+h1 {
     text-align: center;
     border-style: solid;
     border-width: 5px;
