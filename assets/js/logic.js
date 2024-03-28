@@ -1,5 +1,5 @@
 // Include light and dark mode toggle function
-const toggleButton = document.querySelector('#submit');
+const toggleButton = document.querySelector('#toggle');
 
 
 // Input > Dowork > Output - The input is the event

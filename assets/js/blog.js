@@ -1,6 +1,9 @@
 // Include function back button
 
+
+
 // Function that retrieves data from local storage
+const backButton = document.querySelector('#back')
 const blogEl = document.querySelector(".blogPosts")
 function displayBlogs(event) {
     event.preventDefault();
@@ -31,6 +34,15 @@ function displayBlogs(event) {
         `;
         blogEl.innerHTML = blogTable;
     }
+    backButton.addEventListener('click', function (event) {
+        // console.log(event);
+        event.preventDefault();
+        console.log(`is this working?`);
+        window.open("index.html");
+    })
 
 }
+
+
 document.addEventListener("DOMContentLoaded", displayBlogs)
+
