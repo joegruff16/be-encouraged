@@ -18,11 +18,11 @@ body {
     margin: 0;
 }
 
-.table {
-    border-collapse: collapse;
+.blogPosts {
+    border-collapse: separate;
     text-align: left;
     color: black;
-    padding: 50px;
+    padding: 20px;
 
 }
 
