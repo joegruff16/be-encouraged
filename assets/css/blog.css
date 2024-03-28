@@ -18,18 +18,34 @@ body {
     margin: 0;
 }
 
-.blogPosts {
+table {
+    width: 100%;
     border-collapse: separate;
+    border-color: rgb(0, 0, 0);
+    border-width: 10px;
     text-align: left;
-    color: black;
+    color: rgb(123, 118, 118);
     padding: 20px;
+}
 
+
+footer {
+    padding-top: 300px;
+    color: navy;
+}
+
+a {
+    color: red;
+}
+
+.copyright {
+    text-align: center;
 }
 
 td,
 th tr {
     border: 1px solid black;
-    padding: 10px;
+    column-fill: balance
 }
 
 /* body {
