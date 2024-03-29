@@ -7,6 +7,7 @@ toggleButton.addEventListener('click', function (event) {
     // console.log(event);
     event.preventDefault();
     console.log(`does this work?`);
+    lightDarkMode();
 })
 
 function lightDarkMode() {
