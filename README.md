@@ -3,7 +3,11 @@
 
 ## Description
 
+This is a form that takes you to my personal blog. When you input the username, title, and content it is then stored into the local storage. When you are redirected to my blog page you'll notice a footer with my personal contact information. Also whatever you entered into the form is displayed on the blog page. When you click the toggle button it changes the color from white to black. When you click the toggle button again it changes it back to white. 
+
 ## Finished Product 
+
+!["Be Encouraged"](./assets/images/be-encouraged-form.png "My Personal Blog")
 
 ## Credits
 
