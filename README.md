@@ -25,3 +25,5 @@ MIT see more details in repo
 ## Live Link
 
 ## GitHub Repo
+
+<https://github.com/joegruff16/be-encouraged>
