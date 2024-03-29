@@ -9,6 +9,11 @@
     border: 25px rgb(225, 11, 11)
 }
 
+button {
+    height: 40px;
+    width: 80px;
+}
+
 .box {
     margin-right: 25px;
 }

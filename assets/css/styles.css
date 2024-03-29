@@ -1,3 +1,15 @@
+body {
+    background-color: rgb(246, 250, 250);
+    color: rgb(0, 0, 0);
+}
+
+.light-dark {
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 252, 252);
+    height: 40px;
+    width: 80px;
+}
+
 .montserrat-font {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;

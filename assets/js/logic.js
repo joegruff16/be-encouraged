@@ -10,6 +10,7 @@ toggleButton.addEventListener('click', function (event) {
 })
 
 function lightDarkMode() {
+    console.log(`how does this look?`)
     var element = document.body;
     element.classList.toggle("light-dark");
 }

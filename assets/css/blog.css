@@ -11,6 +11,8 @@ button {
     background-color: navy;
     color: aliceblue;
     font-size: medium;
+    height: 50px;
+    width: 100px;
 }
 
 body {

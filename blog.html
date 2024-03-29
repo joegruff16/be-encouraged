@@ -3,22 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./assets/css/blog.css">
         <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/blog.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>My Personal Blog Be Encouraged</title>
     </head>
     <body class="montserrat-font">
-        <div align="right" class="montserrat-font">
+        <section align="right" class="montserrat-font">
             <button id="back">Back</button>
-            <button id="toggle">Toggle</button>
-        </div>
+            <div class="light-dark">
+                <button id="toggle">Toggle</button>
+            </div>
+        </section>
         <div class="box">
             <h1>My First Blog Post</h1>
         </div>
-        
         <section class="blogPosts"></section>
         <!-- <table class="table">
             <tr>
@@ -109,13 +110,19 @@
                 <br>
             </tr>
         </table> -->
-       
         <footer>
-            <h3>Portfolio: <a href="https://joegruff16.github.io/Joe.Portfolio/">Joe.Portfolio</a></h3>
-            <h3>Blog: <a href="https://josephruff.substack.com/">Joseph's Substack</a></h3>
-            <h3>Email: <a href="mailto:joegruff16@gmail">joegruff16@gmailcom</a></h3>
-            <h3 class ="copyright">Made by Joe Ruff &#169</h3>
+            <h3>Portfolio:
+                <a href="https://joegruff16.github.io/Joe.Portfolio/">Joe.Portfolio</a>
+            </h3>
+            <h3>Blog:
+                <a href="https://josephruff.substack.com/">Joseph's Substack</a>
+            </h3>
+            <h3>Email:
+                <a href="mailto:joegruff16@gmail">joegruff16@gmailcom</a>
+            </h3>
+            <h3 class="copyright">Made by Joe Ruff &#169</h3>
         </footer>
         <script src="./assets/js/blog.js"></script>
+        <script src="./assets/js/logic.js"></script>
     </body>
 </html>
