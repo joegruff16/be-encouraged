@@ -7,22 +7,23 @@ h1 {
     color: rgb(94, 93, 93);
 }
 
-button {
-    background-color: navy;
-    color: aliceblue;
-    font-size: medium;
-    height: 50px;
-    width: 100px;
-}
-
 body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: left;
+    align-items: right;
     height: 100vh;
     margin: 0;
 }
+
+button {
+    background-color: navy;
+    color: aliceblue;
+    font-size: medium;
+    height: 40px;
+    width: 80px;
+}
+
 
 .table {
     width: 100%;
